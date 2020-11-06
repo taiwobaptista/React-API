@@ -1,0 +1,14 @@
+.card-wrapper {
+  display: inline-block;
+  margin-top: 0;
+  text-align: left;
+  padding: 2rem 2rem .5rem 2rem;
+  margin-bottom: 30px;
+  position: relative;
+  background: #fff;
+  border-radius: .375rem;
+  -webkit-box-shadow: 0 5px 25px rgba(31,32,65,.15);
+  box-shadow: 0 5px 25px rgba(31,32,65,.15);
+  max-width: 50%;
+  width: 40%;
+}

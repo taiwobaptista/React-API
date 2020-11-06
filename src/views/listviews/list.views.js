@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import {  useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import Playlist from '../../components/card/card';
 import textAnalyticsRequest from '../../store/store.action';
 import './list.css'
 
@@ -8,43 +9,34 @@ function ListInfo() {
     const dispatch = useDispatch();
 
     const fetchPostsByTerm = () => {
-          textAnalyticsRequest('api').then((response)=>{
-            console.log(">>>>>>sentimentsResult>>>>>",response)
-            return {
-              type: 'analyzed',
-              sentiments:response.data.states
-            };
-        }).catch((err)=>{
+        textAnalyticsRequest('api').then((response) => {
+            dispatch({
+                type: 'analyzed',
+                sentiments: response.data.states
+            });
+        }).catch((err) => {
             console.log(err)
         });
-        
-      };
 
-      const useFetching = (someFetchActionCreator) => {
-        const dispatch = useDispatch();
+    };
+
+    const useFetching = async (someFetchActionCreator) => {
         useEffect(() => {
-            dispatch(someFetchActionCreator());
+            someFetchActionCreator();
         }, []);
     }
-    useFetching(fetchPostsByTerm)
 
-      
-    
-      
-    
+    useFetching(fetchPostsByTerm)
     return (
         <>
             <div>
-                {/* hello {sentiments} */}
-                {/* {sentiments && sentiments.states.map((item) => {
+                {sentiments && sentiments.map((item) => {
                     return (
-                    <>
-                      hello new 
-                          
-                      <span key={item._id}>{item}</span>
-                    </>
+                        <>
+                            <Playlist countries={item}/>
+                        </>
                     );
-                })} */}
+                })}
             </div>
         </>
     )
