@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body {
+    margin: 0;
+    font: 20px/2.2 system-ui;
+  } */
+
+
+.main-body{
+    /* height: 700px; */
+    min-height: 700px;
+    width:100%;
+    background-image: url("../images/ibanner2.png");
+    background-size: cover;
+    /* background: linear-gradient(180deg, rgba(242, 201, 76, 0.2) 0%, rgba(242, 153, 74, 0.2) 100%); */
+    /* clip-path: polygon(0% 0%,100% 0%,100% 30%,0% 80%); */
+    
+}
+.content{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    color:#4E598C;
+    padding-top: 30px;
+}
+
+
+.heading{
+    background-color: #2f80ed;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#item{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+#price{
+    float: right;
+    margin-top: -40px;
+    padding-right: 60px;
+}
+
+.text-part{
+    background-color: white;
+    color: #4e59bc;
+    box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+    height: 230px;
+}
+
+.table-one{
+    /* margin-top: 20px; */
+    width: 100%;
+}
+
+.table-one td{
+    padding-top: 30px;
+    padding-left: 70px;
+    
+}
+
+.table-two {
+    margin-top: 35px;
+    border:  1px solid #e5e5e7;
+    box-shadow: 0px 5px 5px rgba(33, 30, 67, 0.08);
+    height: 40px;
+    width: 80%;
+    margin-left: 60px;
+    border-radius: 1px;
+ 
+}
+
+.table-two td{
+    padding-left:20px;
+}
+
+.table-two .td1{
+    padding-left: 350px;
+}
+
+
+.button-area{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    padding-left: 340px;
+}
+
+.mybtn{
+    background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+    width: 16%;
+    
+}
+
+a{
+    color: #4E598C;
+   font-weight: bold;
+   font-size: 20px;
+   padding-left: 30px;
+}
+
+
+
+
+
+@media(max-width:720px){
+
+    .content{
+        width: 85%;
+        margin-left: 40px;
+
+    }
+
+  
+.table-one td{
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+.table-two {
+    height: 40px;
+    width: 60%;
+    margin-left: 40px;
+ 
+}
+
+.table-two .td1{
+    padding-left: 150px;
+}
+
+.table-two td{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+
+
+a{
+    font-size: 20px; 
+
+}
+
+.cancel{
+  margin-top: 5px;
+}
+
+.button-region{
+    width: 100%;
+    
+}
+
+.button-area{
+    padding-left: 40px;
+
+}
+
+.mybtn{
+    width: 30%;
+    height: 40px;   
+}
+
+}
+
+
+

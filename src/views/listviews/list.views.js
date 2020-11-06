@@ -33,7 +33,8 @@ function ListInfo() {
                 {sentiments && sentiments.map((item) => {
                     return (
                         <>
-                            <Playlist countries={item}/>
+                            <Playlist countries={item} />
+                            
                         </>
                     );
                 })}
